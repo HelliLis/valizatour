@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background: #87ceeb;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #e0f7fa;
+}
+
+.tours {
+    padding: 2rem;
+    text-align: center;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+}
+
+.tour-card h4 {
+    margin: 1rem 0 0.5rem;
+}
+
+.tour-card p {
+    padding: 0 1rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #87ceeb;
+    color: white;
+}
+
+.tour-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tour-form label {
+    font-weight: bold;
+}
+
+.tour-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.tour-form select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.tour-form button {
+    background: #87ceeb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tour-form button:hover {
+    background: #4682b4;
+}
+
+.tour-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #87ceeb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tour-link:hover {
+    color: #4682b4;
+}
+
+.reviews {
+    padding: 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.review {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+.review strong {
+    color: #333;
+}

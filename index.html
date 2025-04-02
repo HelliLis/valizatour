@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Морські тури для Валентини</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Морські пригоди</h1>
+        <p class="tagline">Написано з любов'ю для Валентини</p>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Відкрийте для себе наступну морську подорож</h2>
+            <p>Досліджуйте найкращі морські тури, підібрані спеціально для вас.</p>
+            <form class="tour-form">
+                <label for="destination">Куди?</label>
+                <input type="text" id="destination" name="destination" placeholder="Введіть пункт призначення" required>
+                
+                <label for="departure">Звідки відправлення?</label>
+                <input type="text" id="departure" name="departure" placeholder="Введіть місце відправлення" required>
+                
+                <label for="people">Скільки людей?</label>
+                <input type="number" id="people" name="people" placeholder="Введіть кількість людей" min="1" required>
+                
+                <label for="country">Країна:</label>
+                <select id="country" name="country">
+                    <option value="all">Всі країни</option>
+                    <option value="egypt">Єгипет</option>
+                    <option value="turkey">Туреччина</option>
+                    <option value="bali">Балі</option>
+                    <option value="sri-lanka">Шрі-Ланка</option>
+                    <option value="romania">Румунія</option>
+                </select>
+                <button type="submit">Знайти тури</button>
+            </form>
+        </section>
+        <section class="tours">
+            <h3>Наші найкращі пропозиції</h3>
+            <div class="tour-grid">
+                <div class="tour-card" data-country="egypt">
+                    <img src="https://via.placeholder.com/300x200?text=Egypt" alt="Єгипет">
+                    <h4>Єгипетський пляжний відпочинок</h4>
+                    <p>Насолоджуйтеся сонцем і пірамідами на узбережжі Червоного моря.</p>
+                    <a href="https://example.com/egypt-beach" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card" data-country="turkey">
+                    <img src="https://via.placeholder.com/300x200?text=Turkey" alt="Туреччина">
+                    <h4>Турецький курортний відпочинок</h4>
+                    <p>Відпочиньте на узбережжі Середземного моря з усіма зручностями.</p>
+                    <a href="https://example.com/turkey-resort" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card" data-country="bali">
+                    <img src="https://via.placeholder.com/300x200?text=Bali" alt="Балі">
+                    <h4>Тропічний рай на Балі</h4>
+                    <p>Досліджуйте пляжі, джунглі та унікальну культуру Балі.</p>
+                    <a href="https://example.com/bali-paradise" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card" data-country="sri-lanka">
+                    <img src="https://via.placeholder.com/300x200?text=Sri+Lanka" alt="Шрі-Ланка">
+                    <h4>Шрі-Ланка: Перлина Індійського океану</h4>
+                    <p>Відкрийте для себе чайні плантації, пляжі та стародавні храми.</p>
+                    <a href="https://example.com/sri-lanka" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card" data-country="romania">
+                    <img src="https://via.placeholder.com/300x200?text=Romania" alt="Румунія">
+                    <h4>Румунські Карпати</h4>
+                    <p>Відкрийте для себе красу Карпатських гір і середньовічних замків.</p>
+                    <a href="https://example.com/romania-carpathians" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Морський тур">
+                    <h4>Сонячний пляжний відпочинок</h4>
+                    <p>Розслабтеся на золотих пісках і насолоджуйтеся кришталево чистою водою.</p>
+                    <a href="https://example.com/sunny-beach-getaway" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <div class="tour-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Морський тур">
+                    <h4>Острівний райський відпочинок</h4>
+                    <p>Відчуйте спокій на відокремленому райському острові.</p>
+                    <a href="https://example.com/island-paradise-retreat" target="_blank" class="tour-link">Дізнатися більше</a>
+                </div>
+                <!-- Add more tour cards as needed -->
+            </div>
+        </section>
+        <section class="reviews">
+            <h3>Наші відгуки</h3>
+            <div class="review">
+                <p><strong>Олександр:</strong> "Ми відвідали Балі, і це було неймовірно! Валя була чудовим менеджером, яка допомогла нам з усіма деталями. Рекомендую цю імбулічку!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Марія:</strong> "Шрі-Ланка була нашою мрією, і завдяки Валі все пройшло чіназес. Дякуємо за чудову організацію!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Іван:</strong> "Румунські Карпати перевершили всі наші очікування. Мульцумеску! Валя була дуже уважною і професійною. Раджу всім. В мене краш на ваші тури.how to view the site preview? 
+"</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Морські тури. Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
